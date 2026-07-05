@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H4 Fitness Studio | Premium Luxury Gym Chennai</title>
+  
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Transform your body at H4 Fitness Studio, Chennai's premier luxury gym. Modern equipment, certified trainers, and customized training programs in Semmancheri/Perumbakkam.">
+  <meta name="keywords" content="H4 Fitness Studio, gym Semmancheri, gym Perumbakkam, Chennai luxury fitness center, personal training Chennai, modern gym Chennai">
+  <meta name="author" content="H4 Fitness Studio">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Swiper.js Slider CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  
+  <!-- AOS Scroll Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- 2. Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- 3. Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-logo">H4 <span>FITNESS</span></div>
+    <div class="loader-bar">
+      <div class="loader-progress" id="loader-progress"></div>
+    </div>
+  </div>
+
+  <!-- 4. Sticky Header & Glassmorphism Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand-custom" href="#home">
+        H4 <span class="text-accent ms-2">FITNESS</span>
+      </a>
+      <button class="navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <div class="navbar-nav align-items-center mt-3 mt-lg-0">
+          <a class="nav-link-custom active" href="#home">Home</a>
+          <a class="nav-link-custom" href="#about">About</a>
+          <a class="nav-link-custom" href="#why-choose-us">Why Choose Us</a>
+          <a class="nav-link-custom" href="#programs">Programs</a>
+          <a class="nav-link-custom" href="#pricing">Pricing</a>
+          <a class="nav-link-custom" href="#gallery">Gallery</a>
+          <a class="nav-link-custom" href="#testimonials">Reviews</a>
+          <a class="nav-link-custom me-lg-3" href="#contact">Contact</a>
+          <a class="btn-premium btn-accent py-2 px-4 mt-3 mt-lg-0" href="#contact">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 5. Hero Section (Parallax Background & Particles) -->
+  <section id="home" class="hero-section" style="background-image: url('WhatsApp%20Image%202026-07-05%20at%209.02.53%20PM.jpeg');">
+    <div class="hero-overlay"></div>
+    <canvas id="hero-particles" class="hero-particles"></canvas>
+    
+    <div class="hero-content text-center">
+      <h1 class="hero-title">
+        <span>Train Hard.</span>
+        <span class="text-accent">Stay Strong.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Join H4 Fitness Studio and transform your body with modern equipment and expert guidance in Chennai.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-premium btn-accent me-md-3">Join Now</a>
+        <a href="tel:+919840431433" class="btn-premium btn-outline-accent"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- 6. About Section (Counter & Visual Overlap Grid) -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+          <div class="about-image-wrapper">
+            <div class="about-image-container">
+              <img src="WhatsApp%20Image%202026-07-05%20at%209.02.51%20PM.jpeg" alt="H4 Fitness Studio Strength Area" class="about-img">
+            </div>
+            <div class="about-image-frame"></div>
+          </div>
+        </div>
+        <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+          <span class="section-subtitle">About H4 Fitness</span>
+          <h2 class="section-title mb-4">Elite <span>Fitness Studio</span> in Chennai</h2>
+          <p class="mb-4">
+            Welcome to H4 Fitness Studio, a premier fitness destination engineered to unlock your absolute best. Located in Perumbakkam/Semmancheri on the Nookampalayam Link Road, our studio features a selection of elite strength and cardio training gear, meticulously chosen to offer you an outstanding training environment.
+          </p>
+          <p class="mb-4">
+            Whether you want to build raw strength, burn fat, or improve your cardiovascular endurance, we provide the perfect mix of high-grade machinery, certified coaching, and custom progress tracking.
+          </p>
+          
+          <!-- Animated counters -->
+          <div class="counter-grid">
+            <div class="counter-card glass-panel">
+              <span class="counter-num" data-target="2500">0</span>
+              <span class="counter-label">Active Members</span>
+            </div>
+            <div class="counter-card glass-panel">
+              <span class="counter-num" data-target="150">0</span>
+              <span class="counter-label">Gym Equipments</span>
+            </div>
+            <div class="counter-card glass-panel">
+              <span class="counter-num" data-target="12">0</span>
+              <span class="counter-label">Expert Trainers</span>
+            </div>
+            <div class="counter-card glass-panel">
+              <span class="counter-num" data-target="5">0</span>
+              <span class="counter-label">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Why Choose Us Section (Glassmorphic Cards) -->
+  <section id="why-choose-us" class="section-padding bg-black-overlay" style="position:relative;">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="section-subtitle">Our Advantages</span>
+        <h2 class="section-title">Why Choose <span>H4 Fitness</span></h2>
+        <p class="section-desc">Experience luxury fitness facilities built around modern design, state-of-the-art layout, and premium amenities.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card glass-panel">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <h3 class="feature-title">Elite Equipment</h3>
+            <p class="mb-0">Train with international-standard mechanical tools, multi-stations, and heavy-duty strength equipment.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card glass-panel">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="feature-title">Expert Coaching</h3>
+            <p class="mb-0">Receive goal-oriented advice and customized workouts from our highly qualified personal trainers.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card glass-panel">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <h3 class="feature-title">Luxury Vibe</h3>
+            <p class="mb-0">Work out in a highly spacious, fully air-conditioned environment with premium yellow-gold luxury illumination.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-card glass-panel">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="feature-title">Custom Workouts</h3>
+            <p class="mb-0">Get nutrition charts and body assessment sheets tailored perfectly to your individual fitness journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Programs Section (Interactive Cards with Zoom/Blur overlays) -->
+  <section id="programs" class="section-padding">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="section-subtitle">Our Specializations</span>
+        <h2 class="section-title">Designed <span>Training Programs</span></h2>
+        <p class="section-desc">Select from our expert-crafted courses designed to push your limits and transform your body.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Program 1 -->
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="program-card">
+            <div class="program-card-bg" style="background-image: url('WhatsApp%20Image%202026-07-05%20at%209.02.49%20PM.jpeg');"></div>
+            <div class="program-card-overlay"></div>
+            <div class="program-card-content">
+              <span class="program-icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+              <h3 class="program-title">Strength Training</h3>
+              <p class="program-desc">Focus on compound lifts, heavy weights, and hypertrophy routines using our premium dumbbells and barbells.</p>
+              <a href="#contact" class="program-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="program-card">
+            <div class="program-card-bg" style="background-image: url('WhatsApp%20Image%202026-07-05%20at%209.02.54%20PM%20(1).jpeg');"></div>
+            <div class="program-card-overlay"></div>
+            <div class="program-card-content">
+              <span class="program-icon"><i class="fa-solid fa-gauge-high"></i></span>
+              <h3 class="program-title">Cardio & Endurance</h3>
+              <p class="program-desc">Boost your stamina, lung capacity, and lean physique with our row of high-end treadmills and cross trainers.</p>
+              <a href="#contact" class="program-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="program-card">
+            <div class="program-card-bg" style="background-image: url('WhatsApp%20Image%202026-07-05%20at%209.02.51%20PM%20(1).jpeg');"></div>
+            <div class="program-card-overlay"></div>
+            <div class="program-card-content">
+              <span class="program-icon"><i class="fa-solid fa-user-tie"></i></span>
+              <h3 class="program-title">Personal Coaching</h3>
+              <p class="program-desc">Accelerate your progress with 1-on-1 certified guidance, form correction, and personalized nutrition plans.</p>
+              <a href="#contact" class="program-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 4 -->
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+          <div class="program-card">
+            <div class="program-card-bg" style="background-image: url('WhatsApp%20Image%202026-07-05%20at%209.02.50%20PM%20(2).jpeg');"></div>
+            <div class="program-card-overlay"></div>
+            <div class="program-card-content">
+              <span class="program-icon"><i class="fa-solid fa-bolt"></i></span>
+              <h3 class="program-title">Crossfit & Power</h3>
+              <p class="program-desc">High intensity circuits, kettlebell drills, and dynamic movements designed to build functional explosive power.</p>
+              <a href="#contact" class="program-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Pricing Section (Gold highlight, Premium features) -->
+  <section id="pricing" class="section-padding bg-black-overlay">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="section-subtitle">Membership Plans</span>
+        <h2 class="section-title">Choose your <span>pricing tier</span></h2>
+        <p class="section-desc">Flexible, transparent membership plans designed to fit your routine and help you crush your fitness goals.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Plan 1 -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-card glass-panel">
+            <h3 class="pricing-title">Monthly Club</h3>
+            <div class="price-box">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">2,500</span>
+              <span class="price-period">per month</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-circle-check"></i> Access to all Cardio machines</li>
+              <li><i class="fas fa-circle-check"></i> Access to Strength zone</li>
+              <li><i class="fas fa-circle-check"></i> General Gym Trainer guidance</li>
+              <li><i class="fas fa-circle-check"></i> Locker & Shower room access</li>
+              <li class="disabled"><i class="fas fa-circle-xmark"></i> Personalized Workout & Diet charts</li>
+              <li class="disabled"><i class="fas fa-circle-xmark"></i> 1-on-1 Personal Trainer sessions</li>
+            </ul>
+            <a href="#contact" class="btn-premium btn-outline-accent w-100">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Plan 2 (Popular Highlighted) -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-card glass-panel pricing-popular">
+            <div class="popular-badge">Best Value</div>
+            <h3 class="pricing-title">6 Months Pass</h3>
+            <div class="price-box">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">11,000</span>
+              <span class="price-period">for 6 months</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-circle-check"></i> Unlimited Cardio & Strength Access</li>
+              <li><i class="fas fa-circle-check"></i> General Trainer support</li>
+              <li><i class="fas fa-circle-check"></i> Locker & Shower room access</li>
+              <li><i class="fas fa-circle-check"></i> Body assessment monthly report</li>
+              <li><i class="fas fa-circle-check"></i> Customized nutrition & workout charts</li>
+              <li class="disabled"><i class="fas fa-circle-xmark"></i> 1-on-1 Personal Trainer sessions</li>
+            </ul>
+            <a href="#contact" class="btn-premium btn-accent w-100">Join Now</a>
+          </div>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="pricing-card glass-panel">
+            <h3 class="pricing-title">Annual Elite</h3>
+            <div class="price-box">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">18,000</span>
+              <span class="price-period">per year</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-circle-check"></i> Unlimited 365 Days Access</li>
+              <li><i class="fas fa-circle-check"></i> General Trainer support</li>
+              <li><i class="fas fa-circle-check"></i> Locker, Steam & Shower access</li>
+              <li><i class="fas fa-circle-check"></i> Full body fat assessment (bi-weekly)</li>
+              <li><i class="fas fa-circle-check"></i> Personalized Diet & Workout guides</li>
+              <li><i class="fas fa-circle-check"></i> 5 Complimentary Personal Coach sessions</li>
+            </ul>
+            <a href="#contact" class="btn-premium btn-outline-accent w-100">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Gallery Section (Filterable Masonry Grid with Lightbox) -->
+  <section id="gallery" class="section-padding">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="section-subtitle">Inside our Facility</span>
+        <h2 class="section-title">H4 Fitness <span>Gallery</span></h2>
+        <p class="section-desc">Take a visual tour of H4 Fitness Studio. Explore our layout, heavy machinery, strength training stations and cardiovascular lines.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="gallery-filter-wrap" data-aos="fade-up">
+        <button class="gallery-filter-btn active" data-filter="all">All</button>
+        <button class="gallery-filter-btn" data-filter="cardio">Cardio Zone</button>
+        <button class="gallery-filter-btn" data-filter="strength">Strength Zone</button>
+        <button class="gallery-filter-btn" data-filter="machines">Machines</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+        <!-- Item 1 (Cardio) -->
+        <div class="gallery-item cardio">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.49%20PM%20(1).jpeg" alt="Treadmills cardio sector" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Cardio Section</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 (Strength) -->
+        <div class="gallery-item strength">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.49%20PM.jpeg" alt="Cable crossover pulley machines" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Cable Pulley</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.50%20PM%20(1).jpeg" alt="Leg workout machine close-up" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Leg Extension</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.50%20PM%20(2).jpeg" alt="Leg press plates loaded" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Leg Press Unit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.50%20PM.jpeg" alt="Corner cable workout machine" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Lat Pulldown Station</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.51%20PM%20(1).jpeg" alt="Leg curl machine angle" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Hamstring Curl</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.51%20PM%20(2).jpeg" alt="Rowing bar bench station" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Chest Press Rack</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.51%20PM.jpeg" alt="Gym wide rows machinery" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Strength Machines Row</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9 (Strength) -->
+        <div class="gallery-item strength">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.52%20PM%20(1).jpeg" alt="Flat weight bench press station" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Flat Bench Station</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 10 (Strength) -->
+        <div class="gallery-item strength">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.52%20PM%20(2).jpeg" alt="Barbell weight plates rack" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Plates Loading Rack</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 11 (Cardio) -->
+        <div class="gallery-item cardio">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.52%20PM.jpeg" alt="Treadmill monitor console close up" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Treadmill Unit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 12 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.53%20PM%20(1).jpeg" alt="Adjustable benches and cables" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Pulley Station</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 13 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.53%20PM%20(2).jpeg" alt="Pulley machines mirrors alignment" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Pulley Mirror Zone</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 14 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.53%20PM.jpeg" alt="Bruce Lee wall graphic layout" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Cardio Room & Wall Graphic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 15 (Machines) -->
+        <div class="gallery-item machines">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.54%20PM.jpeg" alt="Gym layout view from entrance door" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Facility Wide Layout</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 16 (Cardio) -->
+        <div class="gallery-item cardio">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.54%20PM%20(1).jpeg" alt="Treadmills rows with mirrors" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Cardio Row Sideview</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 17 (Cardio) -->
+        <div class="gallery-item cardio">
+          <div class="gallery-img-box">
+            <img src="WhatsApp%20Image%202026-07-05%20at%209.02.54%20PM%20(2).jpeg" alt="Treadmills and air conditioner positioning" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-hover-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
+              <span class="gallery-hover-text">Cardio Zone Front</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal container -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close"><i class="fas fa-xmark"></i></button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+      <img src="" alt="Lightbox Zoomed" class="lightbox-img" id="lightbox-img">
+      <button class="lightbox-nav lightbox-next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- 11. Testimonials Section (Swiper.js slider, Glassmorphism Cards) -->
+  <section id="testimonials" class="section-padding bg-black-overlay">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="section-subtitle">Client Stories</span>
+        <h2 class="section-title">What <span>our members</span> say</h2>
+        <p class="section-desc">Read reviews from individuals who transformed their bodies, stamina and lifestyle with H4 Fitness.</p>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card glass-panel">
+              <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+              <p class="testimonial-text">
+                "The strength equipment at H4 Fitness Studio is incredible. I've trained in multiple gyms in Chennai, but the quality of machines and the spacious environment here stands out completely. The trainers are always supportive."
+              </p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-user">
+                <!-- Fallback to letters inside styled circle since no stock photos are allowed -->
+                <div class="testimonial-user-avatar d-flex align-items-center justify-content-center bg-black text-accent fw-bold" style="width: 50px; height: 50px;">
+                  AR
+                </div>
+                <div class="testimonial-user-info">
+                  <h4>Arun Raj</h4>
+                  <span>Member since 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card glass-panel">
+              <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+              <p class="testimonial-text">
+                "I joined H4 for weight loss and cardiovascular training. The treadmills are always clean, and the air conditioning is perfect even during peak summer. Lost 8kgs in just 3 months with their custom diet charts."
+              </p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="testimonial-user">
+                <div class="testimonial-user-avatar d-flex align-items-center justify-content-center bg-black text-accent fw-bold" style="width: 50px; height: 50px;">
+                  DN
+                </div>
+                <div class="testimonial-user-info">
+                  <h4>Deepika N.</h4>
+                  <span>Fitness Enthusiast</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card glass-panel">
+              <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+              <p class="testimonial-text">
+                "H4 has a luxury look with the gold accents on the ceiling and mirrors. It's clean, hygienic, and has an energetic vibe that pushes you to work harder. Certified trainers here actually guide you on proper compound lift form."
+              </p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-user">
+                <div class="testimonial-user-avatar d-flex align-items-center justify-content-center bg-black text-accent fw-bold" style="width: 50px; height: 50px;">
+                  VS
+                </div>
+                <div class="testimonial-user-info">
+                  <h4>Vikram Sen</h4>
+                  <span>Powerlifter</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card glass-panel">
+              <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+              <p class="testimonial-text">
+                "Finding a gym that has all functional machines and is budget-friendly in Perumbakkam was hard until I found H4 Fitness. Highly recommended for couples and working professionals looking for premium amenities."
+              </p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-user">
+                <div class="testimonial-user-avatar d-flex align-items-center justify-content-center bg-black text-accent fw-bold" style="width: 50px; height: 50px;">
+                  KP
+                </div>
+                <div class="testimonial-user-info">
+                  <h4>Karthik P.</h4>
+                  <span>IT Professional</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Contact Section (Responsive Layout, Google Maps dark styled Embed, Form) -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2 class="section-title">Start your <span>transformation</span></h2>
+        <p class="section-desc">Have questions about our pricing, equipment or trainers? Write to us or call us directly. We are ready to help.</p>
+      </div>
+
+      <div class="row g-5">
+        <!-- Contact details -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="glass-panel p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="font-heading text-accent mb-4" style="font-size: 2rem;">H4 FITNESS STUDIO</h3>
+              <p class="mb-4">Visit our premium fitness center in Chennai and speak directly with one of our head coach specialists.</p>
+              
+              <ul class="contact-info-list">
+                <!-- Location -->
+                <li class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-map-location-dot"></i>
+                  </div>
+                  <div class="contact-info-text">
+                    <h4>Studio Location</h4>
+                    <p>721, Kailasah Plaza, Plot No.710,<br>Nookampalayam Link Road, Semmancheri,<br>Perumbakkam, Chennai - 600119</p>
+                  </div>
+                </li>
+
+                <!-- Phone -->
+                <li class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-phone-volume"></i>
+                  </div>
+                  <div class="contact-info-text">
+                    <h4>Direct Call</h4>
+                    <p><a href="tel:+919840431433" class="text-white text-decoration-none">+91 98404 31433</a></p>
+                  </div>
+                </li>
+
+                <!-- Email -->
+                <li class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                  </div>
+                  <div class="contact-info-text">
+                    <h4>Email Address</h4>
+                    <p><a href="mailto:info@h4fitnessstudio.com" class="text-white text-decoration-none">info@h4fitnessstudio.com</a></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Styled Map container -->
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/place/H4+Fitness+Studio+-+Semmancheri/@12.8792674,80.2093522,17z/data=!3m1!4b1!4m6!3m5!1s0x3a525ba6b8c387b9:0xa0f6faaed7eadef4!8m2!3d12.8792622!4d80.2119271!16s%2Fg%2F11ydmjrbsn?hl=en&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="contact-form glass-panel h-100">
+            <h3 class="font-heading mb-4 text-uppercase" style="font-size: 2rem; letter-spacing: 1px;">Request a <span>Call Back</span></h3>
+            <p class="mb-5">Fill out the quick inquiry form below. Our trainer will contact you within 24 hours to schedule your free trial session.</p>
+            
+            <form id="gym-contact-form">
+              <div class="form-group-custom">
+                <input type="text" class="form-control-custom" id="name" placeholder=" " required>
+                <label for="name" class="form-label-custom">Full Name</label>
+              </div>
+
+              <div class="form-group-custom">
+                <input type="tel" class="form-control-custom" id="phone" placeholder=" " pattern="[0-9]{10,15}" required>
+                <label for="phone" class="form-label-custom">Phone Number</label>
+              </div>
+
+              <div class="form-group-custom">
+                <input type="text" class="form-control-custom" id="subject" placeholder=" " required>
+                <label for="subject" class="form-label-custom">I'm interested in (e.g., Strength, Cardio, Weight Loss)</label>
+              </div>
+
+              <div class="form-group-custom">
+                <textarea class="form-control-custom" id="message" rows="4" placeholder=" " required></textarea>
+                <label for="message" class="form-label-custom">Your Message</label>
+              </div>
+
+              <button type="submit" class="btn-premium btn-accent w-100 mt-3 py-3">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Footer Section (Branding, Navigation Links, Socials) -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">H4 <span>FITNESS</span></div>
+          <p class="pe-lg-4">Chennai's elite, premium fitness destination. Equipping you with high-caliber training gear, custom wellness plans, and personal coaches to build a stronger version of yourself.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-subtitle">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-subtitle">Working Hours</h4>
+          <ul class="footer-links">
+            <li><span class="text-white-50">Monday - Saturday:</span><br><span class="text-accent">05:00 AM - 10:00 PM</span></li>
+            <li class="mt-2"><span class="text-white-50">Sunday:</span><br><span class="text-accent">06:00 AM - 12:00 PM</span></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-subtitle">Newsletter</h4>
+          <p>Subscribe to receive weekly training updates, nutrition advice, and special package discounts.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 H4 Fitness Studio. All Rights Reserved. Designed to wow.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 14. Back-To-Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Libraries Scripts -->
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Swiper Slider JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- AOS Scroll Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Main custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
